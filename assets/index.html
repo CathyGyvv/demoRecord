@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>example</title>
+  <link rel="stylesheet" href="<%=appPrefix %>static/nprogress/custom-nprogress.css" />
+  <script src="<%=appPrefix %>static/nprogress/nprogress.js"></script>
+  <script src="<%=appPrefix %>static/nprogress/nprogressUtils.js"></script>
+  <script src="<%=appPrefix %>static/config.js?v=<%=publishVersion %>"></script>
+  <script type="text/javascript"
+  src="https://webapi.amap.com/maps?v=1.4.12&key=96a92e7858256cc542b18472bd88d882&plugin=AMap.MarkerClusterer,Map3D">
+</script>
+</head>
+<body>
+  <div id="app" style="width:100%;height:100%"></div>
+  <script type="text/html" id="splash-template">
+    <div class="splash card">
+      <div role="spinner"><div class="spinner-icon"></div></div>
+      <div style="width:100%;height:100%" class="lds-ellipsis">
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+      </div>
+      <div class="nprogress"><div class="nprogress-bar" role="bar"></div></div>
+    </div>
+  </script>
+  <script>
+    NProgress.configure({template: document.getElementById('splash-template').innerHTML});
+    nprogressUtils.start();
+    window.onload = function(){nprogressUtils.done();};
+  </script>
+</body>
+</html>

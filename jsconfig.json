@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": [
+        "./assets/components/*"
+      ],
+      "router/*": [
+        "./assets/router/*"
+      ],
+      "store/*": [
+        "./assets/store/*"
+      ],
+      "pages/*": [
+        "./assets/pages/*"
+      ],
+      "api/*": [
+        "./assets/api/*"
+      ],
+      "utils/*": [
+        "./assets/utils/*"
+      ],
+      "public/*": [
+        "./assets/public/*"
+      ]
+    }
+  },
+  "include": ["assets"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

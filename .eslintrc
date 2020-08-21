@@ -1,0 +1,65 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "jsx": true
+    }
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jquery": true,
+    "commonjs": true,
+    "phantomjs": true,
+    "mocha": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "warn",//使用console警告
+    "no-alert":"error",//禁用 alert、confirm 和 prompt
+    "no-unused-vars": "warn",//变量定义未使用警告
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "import/no-unresolved": 0,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "strict": 0
+  },
+  "settings": {
+    "react": {
+      "version": "^16.8.6"
+    },
+    // 如果我们通过webpack配置忽略了js文件后缀，在正常情况下eslint会因为找不到文件而报错。因此需要在settings里配置可省略的后缀名
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    },
+    // 哪些import是不去检查的
+    "import/ignore": [
+      "node_modules"
+    ]
+  },
+  "globals": {
+    "globalConfig": true,
+    "NProgress": true,
+    "nprogressUtils": true
+  }
+}

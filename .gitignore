@@ -1,0 +1,30 @@
+# Node Logs
+logs
+*.log
+npm-debug.log*
+
+# VisualStudioCode
+.settings
+
+# WebStorm
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Dependency directory
+node_modules/
+
+# Compiled binary
+dist/
+
+.idea/
+.vscode/
+.DS_Store
+.AppleDouble
+.LSOverride
+.happypack/
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+._*

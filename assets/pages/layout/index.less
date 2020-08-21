@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑, MicrosoftYaHei;
+    list-style: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    position: inherit;
+}
+
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.except-header-container {
+    width: 100%;
+    height: calc(~'100% - 50px');
+    display: flex;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+// 对话框背景色
+.ant-modal-mask {
+    background-color: rgba(0, 0, 0, .20) !important;
+}
+
+.ant-upload-list {
+    width: 200px;
+}
+
+.ant-drawer-body {
+     height: calc(~'100% - 108px');
+     overflow: scroll;
+    .ant-form-item-label {
+        line-height: 20px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        label {
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+    .ant-form-item-control {
+        line-height: 32px;
+    }
+}
+
+.ant-message {
+    top: 50px;
+}
+// 表格点击选中行
+.clickRowStyle{
+  background: rgb(229, 246, 254);
+}
+// .ant-tree-iconEle {
+//     display: none;
+// }
